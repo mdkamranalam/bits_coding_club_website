@@ -13,6 +13,10 @@ body {
 }
 
 /* Header  */
+header {
+  width: 100%;
+}
+
 .logo img {
   width: 50px;
 }
@@ -189,7 +193,6 @@ nav ul li a:hover {
     rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
 }
 
-
 /* Guest Speaker Section */
 .guest-speakers {
   width: 100%;
@@ -229,7 +232,6 @@ nav ul li a:hover {
   margin-top: 20px;
   padding: 5px;
 }
-
 
 .guest-speaker-img img {
   border-radius: 50%;
@@ -283,10 +285,11 @@ nav ul li a:hover {
 footer {
   text-align: center;
   padding: 1rem;
+  min-height: 28vh;
   background-color: #2b2b88;
   color: white;
   line-height: 2rem;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 footer a {
@@ -310,8 +313,8 @@ footer a:hover {
   }
 
   nav ul {
-  gap: 20px;
-}
+    gap: 20px;
+  }
 }
 
 @media (max-width: 930px) {
@@ -329,6 +332,7 @@ footer a:hover {
 
   nav ul {
     position: absolute;
+    height: 100vh;
     top: 50px;
     left: 0;
     right: 0;
@@ -341,7 +345,7 @@ footer a:hover {
   }
 
   nav ul li {
-    padding: 20px;
+    padding: 8px;
   }
 
   .menu-icon {

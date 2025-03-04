@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/calendar-style.css">
 </head>
 
 <body>
@@ -35,11 +36,13 @@
 
     <main>
         <section class="calendar">
-            <h1>Calendar of Events</h1>
+            <!-- <h1>Calendar of Events</h1>
             <ul id="event-list">
                 <li>March 5, 2025: AI Workshop</li>
                 <li>March 10, 2025: Guest Talk</li>
-            </ul>
+            </ul> -->
+            <div id="calendar"></div>
+
         </section>
     </main>
 
@@ -48,7 +51,38 @@
         <p>© 2025 BITS Coding Club</p>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="assets/js/calendar-script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#calendar').evoCalendar({
+                "eventHeaderFormat": 'MM d, yyyy',
+                
+
+                calendarEvents: [
+                    {
+                        id: 'event_01',
+                        name: "Final Coding Club Website Submission Date",
+                        date: "March/13/2025",
+                        description: "Deadline for BITS Coding Clud Website Competition",
+                        type: "deadline",
+                        everyYear: true,
+                    },
+                    // For Long run
+                    {
+                        id: "event-02",
+                        name: "Coding Club Website Design Competition",
+                        badge: "03/01 - 03/13",
+                        date: ["March/01/2025", "March/13/2025"],
+                        description: "We are excited to announce the Coding Club Website Design Competition! This is your opportunity to showcase your creativity and technical skills in designing an engaging, user-friendly, and visually appealing website for our Coding Club. Participants must develop a fully coded website using HTML, CSS, and JavaScript.",
+                        type: "event",
+                        color: "#63d867"
+                    }
+                ]
+            })
+        })
+    </script>
 </body>
 
 </html>
