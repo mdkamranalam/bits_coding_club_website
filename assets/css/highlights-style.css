@@ -1,0 +1,102 @@
+.highlights {
+  margin: 20px 40px;
+  height: 60vh;
+}
+
+.highlights-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.highlight-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+}
+
+.highlight-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.highlight-card h3 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.highlight-card .role {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.highlight-card .date {
+  font-size: 0.85em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.highlight-card .achievements,
+.highlight-card .contributions {
+  margin-bottom: 10px;
+}
+
+.highlight-card .achievements strong,
+.highlight-card .contributions strong {
+  color: #444;
+}
+
+.no-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #007BFF;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.role {
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+.role:where([data-role="Faculty"]) {
+  background-color: #28A745;
+  color: white;
+}
+.role:where([data-role="Student"]) {
+  background-color: #FFC107;
+  color: black;
+}
+
+/* Responsive tweak */
+@media (max-width: 1000px) {
+  .highlights {
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .highlights {
+    margin: 12px 20px;
+  }
+  .highlights-section {
+    grid-template-columns: 1fr;
+  }
+}
