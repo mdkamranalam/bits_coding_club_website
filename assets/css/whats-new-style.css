@@ -1,3 +1,8 @@
+.whats-new {
+  margin: 20px 40px;
+  height: 60vh;
+}
+
 .updates-section {
   max-width: 800px;
   margin: 20px auto;
@@ -53,6 +58,9 @@
 }
 
 @media (max-width: 420px) {
+  .whats-new {
+    height: auto;
+  }
   .update-card {
     flex-direction: column;
     gap: 20px;
