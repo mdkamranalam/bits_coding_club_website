@@ -12,9 +12,11 @@
 
 html,
 body {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header  */
@@ -24,25 +26,41 @@ header {
 
 .logo img {
   width: 50px;
+  border-radius: 10px;
 }
 
 nav {
-  padding: 0 100px;
+  padding: 0px 100px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  height: 70px;
   background-color: var(--primary-color);
+  gap: 50px;
+  
 }
 
 nav ul {
   display: flex;
-  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 
 nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style: none;
+  width: 100%;
+  height: 70px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+  background-color: #CF2027;
 }
 
 nav ul li a {
@@ -50,11 +68,6 @@ nav ul li a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  transition: all 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-  color: #2b2b88;
 }
 
 .menu-icon {
@@ -64,6 +77,10 @@ nav ul li a:hover {
 .menu-icon i {
   color: white;
   font-size: 30px;
+}
+
+main {
+  flex-grow: 1;
 }
 
 /* Hero Section  */
@@ -209,7 +226,7 @@ nav ul li a:hover {
   margin-bottom: 20px;
   padding: 30px;
   /* background-color: #2b2b88; */
-  background: linear-gradient(120deg, var(--secondary-color), var(--primary-color));
+  background: linear-gradient(40deg, var(--secondary-color), #CF2027);
   color: white;
 }
 
@@ -290,11 +307,11 @@ nav ul li a:hover {
 footer {
   text-align: center;
   padding: 1rem;
-  min-height: 28vh;
+  max-height: 28vh;
   background-color: var(--secondary-color);
   color: white;
   line-height: 2rem;
-  /* margin-top: 40px; */
+  margin-top: 40px;
 }
 
 footer a {
@@ -303,7 +320,7 @@ footer a {
 }
 
 footer a:hover {
-  color: red;
+  color: #CF2027;
 }
 
 /* Utilities  */
@@ -317,9 +334,9 @@ footer a:hover {
     padding: 0 50px;
   }
 
-  nav ul {
+  /* nav ul {
     gap: 20px;
-  }
+  } */
 }
 
 @media (max-width: 930px) {
