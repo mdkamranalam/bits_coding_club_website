@@ -1,0 +1,107 @@
+@import url(style.css);
+
+.recruitment {
+  margin: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.right-section {
+  width: 50%;
+}
+
+.left-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(40deg, var(--primary-color), #FFE275);
+  border-radius: 10px;
+  width: 50%;
+  min-height: 60vh;
+}
+
+.left-section form {
+  width: 90%;
+  padding: 5px 10px;
+}
+
+form input {
+  width: 100%;
+  margin: 2px 0px 10px 0px;
+  padding: 10px 5px;
+  font-size: 16px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+form input:focus {
+  border: 2px solid cyan;
+}
+
+form select {
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+form textarea {
+  width: 100%;
+  resize: none;
+  height: 100px;
+  padding: 10px 5px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+form textarea:focus {
+  border: 2px solid cyan;
+}
+
+.submit-btn {
+  width: 50%;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #fff;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+
+.text-section {
+  line-height: 2rem;
+  margin-top: 20px;
+}
+
+.list {
+  margin-left: 18px;
+}
+
+@media (max-width: 720px) {
+  .recruitment {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .right-section {
+    width: 100%;
+  }
+
+  .left-section {
+    width: 100%;
+  }
+}

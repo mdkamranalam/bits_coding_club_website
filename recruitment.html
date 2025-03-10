@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BITS Coding Club - Recruitment</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/recruitment-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -35,14 +36,85 @@
 
     <main>
         <section class="recruitment">
-            <h1>Join the Coding Club</h1>
-            <p>Interested in coding? Fill out the form below or email us!</p>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Why join us?" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
+            <div class="right-section">
+                <h1>Join <span>BITS</span> Coding Club!</h1>
+                <p><i>Code, Create, Connect - Your Tech Journey Starts Here</i></p>
+
+                <div class="text-section">
+                    <h3>What's in it for You?</h3>
+                    <ul class="list">
+                        <li><strong>Learn Skills:</strong> Master whatever excites you through hand-on workshops.</li>
+                        <li><strong>Build Stuff:</strong> Team up to create apps, games, or websites you can show off.
+                        </li>
+                        <li><strong>Compete:</strong> Test your skills in coding challenges and hackathons.</li>
+                        <li><strong>Meet People:</strong> Connect with coders, mentors, and pros in the tech world.</li>
+                        <li>No experience? No problem! All skill levels are welcome.</li>
+                    </ul>
+                </div>
+
+                <div class="text-section">
+                    <h3>What We Do?</h3>
+                    <ul class="list">
+                        <li>Weekly meetups with coding sessions and guest speakers.</li>
+                        <li>Fun projects like building a club website or a game.</li>
+                        <li>Hackathons to flex your coding muscles.</li>
+                    </ul>
+                </div>
+
+                <div class="text-section">
+                    <h3>How to Join?</h3>
+                    <ol class="list">
+                        <li>Fill out our quick <a href="">sign-up form</a>.</li>
+                        <li>After that you will get the meeting link on the mail ID, then join the meeting that we
+                            schedule
+                            for you.</li>
+                        <li>That’s it—you’re a CodeCrafter! No fees, just bring your enthusiasm.</li>
+                    </ol>
+                </div>
+
+                <div class="text-section">
+                    <h3>Questions?</h3>
+                    <p>Email us at <a
+                            href="mailto:codingclub@online.bits-pilani.ac.in">codingclub@online.bits-pilani.ac.in</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="left-section">
+                <h3>Fill up the form.</h3>
+                <form action="">
+                    <div>
+                        <label for="fullname">Fullname: </label>
+                        <input type="text" name="fullname" id="" required>
+                    </div>
+                    <div>
+                        <label for="email">BITS Email ID: </label>
+                        <input type="email" name="email" id="" required>
+                    </div>
+                    <div>
+                        <label for="id">BITS ID: </label>
+                        <input type="text" required>
+                    </div>
+                    <div>
+                        <label for="">Select your cohort: </label>
+                        <select name="cohort" id="" required>
+                            <option value="---" default>-</option>
+                            <option value="cohort-1">Cohort 1</option>
+                            <option value="cohort-2">Cohort 2</option>
+                            <option value="cohort-3">Cohort 3</option>
+                            <option value="cohort-4">Cohort 4</option>
+                            <option value="cohort-5">Cohort 5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <textarea name="textarea" id=""
+                            placeholder="Tell me about yourself why you want to join the BITS coding club?"
+                            maxlength="300" required></textarea>
+                    </div>
+                </form>
+                <button class="submit-btn" type="submit">Join</button>
+            </div>
+
         </section>
     </main>
 

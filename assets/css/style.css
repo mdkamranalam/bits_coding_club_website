@@ -5,6 +5,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+:root {
+  --primary-color: #b78a2d;
+  --secondary-color: #2b2b88;
+}
+
 html,
 body {
   height: 100%;
@@ -28,7 +33,7 @@ nav {
   justify-content: space-between;
   position: relative;
   height: 70px;
-  background-color: #b78a2d;
+  background-color: var(--primary-color);
 }
 
 nav ul {
@@ -69,7 +74,7 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-  color: #b78a2d;
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -109,7 +114,7 @@ nav ul li a:hover {
 }
 
 .box-2 h1 {
-  color: #b78a2d;
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -204,7 +209,7 @@ nav ul li a:hover {
   margin-bottom: 20px;
   padding: 30px;
   /* background-color: #2b2b88; */
-  background: linear-gradient(120deg, #2b2b88, #b78a2d);
+  background: linear-gradient(120deg, var(--secondary-color), var(--primary-color));
   color: white;
 }
 
@@ -286,7 +291,7 @@ footer {
   text-align: center;
   padding: 1rem;
   min-height: 28vh;
-  background-color: #2b2b88;
+  background-color: var(--secondary-color);
   color: white;
   line-height: 2rem;
   /* margin-top: 40px; */
@@ -303,7 +308,7 @@ footer a:hover {
 
 /* Utilities  */
 .active {
-  color: #2b2b88;
+  color: var(--secondary-color);
 }
 
 /* Responsive Design */
