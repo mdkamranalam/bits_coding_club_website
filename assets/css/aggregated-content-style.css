@@ -1,6 +1,5 @@
 .recent-event-section {
     margin: 20px 40px;
-    min-height: 60vh;
 }
 
 .content-section {
@@ -16,6 +15,11 @@
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.content-card:hover {
+  transform: translateY(-5%);
 }
 
 .content-card h3 {
