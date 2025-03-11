@@ -3,7 +3,8 @@ const facultiesData = [
   {
     name: "Dr. Jane Smith",
     role: "Faculty",
-    photo: "https://via.placeholder.com/100",
+    photo:
+      "https://raw.githubusercontent.com/mdkamranalam/bits_coding_club_website/refs/heads/main/assets/images/highlights/faculty-1.jpg",
     achievements: "Published a paper on AI optimization.",
     contributions: "Led the AI workshop series.",
     date: "2025-03-02",
@@ -11,7 +12,8 @@ const facultiesData = [
   {
     name: "Prof. Mark Lee",
     role: "Faculty",
-    photo: "https://via.placeholder.com/100",
+    photo:
+      "https://raw.githubusercontent.com/mdkamranalam/bits_coding_club_website/refs/heads/main/assets/images/highlights/faculty-2.jpg",
     achievements: "Secured funding for club projects.",
     contributions: "Mentored 10+ students in hackathons.",
     date: "2025-02-15",
@@ -22,7 +24,8 @@ const studentsData = [
   {
     name: "Alex Martin",
     role: "Student",
-    photo: "https://via.placeholder.com/100",
+    photo:
+      "https://raw.githubusercontent.com/mdkamranalam/bits_coding_club_website/refs/heads/main/assets/images/highlights/student-1.jpg",
     achievements: "Won the Palindrome Checker Challenge.",
     contributions: "Built the club’s event registration system.",
     date: "2025-02-25",
@@ -30,7 +33,8 @@ const studentsData = [
   {
     name: "Sarah Kim",
     role: "Student",
-    photo: "https://via.placeholder.com/100",
+    photo:
+      "https://raw.githubusercontent.com/mdkamranalam/bits_coding_club_website/refs/heads/main/assets/images/highlights/student-2.jpg",
     achievements: "Published an open-source API testing tool.",
     contributions: "Organized the Spring Code Jam.",
     date: "2025-02-28",
