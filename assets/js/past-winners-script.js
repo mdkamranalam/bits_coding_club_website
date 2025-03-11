@@ -5,7 +5,8 @@ const winnersData = [
     name: "Alex Martin",
     date: "2025-02-25",
     details: "Won the Palindrome Checker Challenge with an elegant solution.",
-    image: "https://via.placeholder.com/300x150?text=Alex+Martin",
+    image:
+      "https://raw.githubusercontent.com/mdkamranalam/bits_coding_club_website/refs/heads/main/assets/images/past-winners/winner-student-2.jpg",
   },
   {
     type: "Contest Winner",
@@ -13,14 +14,16 @@ const winnersData = [
     date: "2025-03-01",
     details:
       "Took 2nd place in the Regional Hackathon with an AI recycling app.",
-    image: "https://via.placeholder.com/300x150?text=CodeStorm",
+    image:
+      "https://raw.githubusercontent.com/mdkamranalam/bits_coding_club_website/refs/heads/main/assets/images/past-winners/winner-team-1.jpg",
   },
   {
     type: "Contest Winner",
     name: "Sarah Kim",
     date: "2024-12-10",
     details: "1st place in the Winter Code Sprint with a sorting visualizer.",
-    image: "https://via.placeholder.com/300x150?text=Sarah+Kim",
+    image:
+      "https://raw.githubusercontent.com/mdkamranalam/bits_coding_club_website/refs/heads/main/assets/images/past-winners/winner-student-1.jpg",
   },
 ];
 
@@ -30,14 +33,16 @@ const guestsData = [
     name: "Dr. Emily Chen",
     date: "2024-11-15",
     details: "Discussed 'Quantum Computing Basics' with our club.",
-    image: "https://via.placeholder.com/300x150?text=Emily+Chen",
+    image:
+      "https://raw.githubusercontent.com/mdkamranalam/bits_coding_club_website/refs/heads/main/assets/images/guest_speakers/guest-speaker-2.jpg",
   },
   {
     type: "Guest Talk",
     name: "Jane Doe",
     date: "2025-03-10",
     details: "Senior dev at xAI spoke on 'The Future of AI in Coding'.",
-    image: "",
+    image:
+      "https://raw.githubusercontent.com/mdkamranalam/bits_coding_club_website/refs/heads/main/assets/images/guest_speakers/guest-speaker-1.jpg",
   },
 ];
 
